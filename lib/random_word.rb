@@ -8,6 +8,7 @@ class RandomWord
   end
 
   def positions_for(characters: [])
-    # for you to implement :)
+    letters =  @word.scan /\w/
+    byebug
   end
 end
