@@ -1,0 +1,29 @@
+Hello, Welcome to hangman.
+Please guess the word!
+
+Each wrong guess takes our friend one step closer to his doom.
+
+You have 9 wrong guesses left before he hangs!
+
+Would you like to:
+1) Guess a letter?
+2) Guess the whole word?
+
+_ _ _ _ _ _ _ _
+h o m e b r e w
+
+
+
+
+
+
+if statement :
+correct letter > print on dash
+wrong letter > puts "Uh oh, try again"
+
+Replace dashes with letters
+
+- I want to represent my word as a hash of placeholders (dashes)
+> how do I show dashes? = make an array of dashes
+> if statement: if word is guessed, replace dash with letter
+(same index, replace or map?)
