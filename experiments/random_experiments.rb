@@ -1,4 +1,4 @@
-# require 'byebug'
+require 'byebug'
 
 WORDS = %w(programming)
 

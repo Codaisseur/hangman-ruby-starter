@@ -10,9 +10,9 @@ class Hangman
   end
 
   def play!
-    puts
 
   end
+  
   def greeting
     puts "Hello, Welcome to hangman."
     sleep(2)
@@ -26,14 +26,14 @@ class Hangman
   end
   greeting
 
-  while true
-    puts `clear`
-    puts "You have 10 wrong guesses left before he hangs!"
-    sleep(4)
-    puts "Enter letters"
-    sleep(4)
-    player_input = gets.chomp.downcase
-  end
+  # while true
+  #   puts `clear`
+  #   puts "You have 10 wrong guesses left before he hangs!"
+  #   sleep(4)
+  #   puts "Enter letters"
+  #   sleep(4)
+  #   player_input = gets.chomp.downcase
+  # end
 
 
 end
