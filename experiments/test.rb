@@ -1,4 +1,4 @@
-require 'byebug'
+# require 'byebug'
 
 WORDS = %w(programming)
 
@@ -8,24 +8,38 @@ WORDS = %w(programming)
   @word_array = @word.scan /\w/
   @user_input = gets.chomp.scan /\w/
   @matches =  @word_array & @user_input
-loop do
-  puts `clear`
-      if @word_array.any? { |i| @user_input.include? i }
-        puts @matches.inspect
-        
-      else
-        @bad_guesses_left -= 1
-        puts "Sorry, no matches. Try again."
-        puts "You have #{@bad_guesses_left} guesses left"
-      end
-      unless @bad_guesses_left != 0
-        break
-
-      end
 
 
 
+def matching_letters
+  if @word_array.any? { |i| @user_input.include? i }
+    puts @matches.inspect
+    puts "You have #{@bad_guesses_left} guesses left"
+  else
+    @bad_guesses_left -= 1
+    puts "Sorry, no matches. Try again."
+    puts "You have #{@bad_guesses_left} guesses left"
+  end
 end
+
+
+matching_letters
+
+
+# loop do
+#   puts `clear`
+#       if @word_array.any? { |i| @user_input.include? i }
+#         puts @matches.inspect
+#
+#       else
+#         @bad_guesses_left -= 1
+#         puts "Sorry, no matches. Try again."
+#         puts "You have #{@bad_guesses_left} guesses left"
+#       end
+#       unless @bad_guesses_left != 0
+#         break
+#       end
+#     end
 
 
 
